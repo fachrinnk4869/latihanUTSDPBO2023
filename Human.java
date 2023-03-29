@@ -2,6 +2,8 @@ public class Human {
   private String nik;// atribut NIK
   private String nama;// atribut Nama
   private String jenisKelamin;// Jenis Kelamin
+  private Rumah rumah;
+  private Gedung gedung;
 
   Human(){
     // inisiasi dengan string kosong
@@ -14,6 +16,19 @@ public class Human {
     this.nama = nama;
     this.nik = nik;
     this.jenisKelamin = jenisKelamin;
+  }
+
+  public Gedung getGedung() {
+    return gedung;
+  }
+  public void setGedung(Gedung gedung) {
+    this.gedung = gedung;
+  }
+  public Rumah getRumah() {
+    return rumah;
+  }
+  public void setRumah(Rumah rumah) {
+    this.rumah = rumah;
   }
 
   public String getNama(){
